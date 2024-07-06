@@ -1,0 +1,14 @@
+:root {
+    --clr-dark: 92, 41, 84;
+    --clr-light: 254, 251, 254;
+    --clr-dark-pink: 171, 73, 134;
+    --clr-light-pink: 224, 148, 194;
+
+    --ff-work-sans: "Work Sans", sans-serif;
+
+    --fs-700: 3rem;
+    --fs-600: 2.875rem;
+    --fs-500: 2.25rem;
+    --fs-400: 1.125rem; 
+    --fs-300: 1rem;
+}

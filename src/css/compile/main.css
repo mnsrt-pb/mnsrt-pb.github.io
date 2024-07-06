@@ -1,0 +1,7 @@
+body {
+    font-family: var(--ff-work-sans);
+    font-size: var(--fs-400);
+    color: rgb(var(--clr-dark));
+    background-color: rgb(var(--clr-light));
+}
+
