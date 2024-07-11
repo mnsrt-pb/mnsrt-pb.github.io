@@ -104,12 +104,12 @@ div {
     padding: 0;
     margin: 0;
 }
+
 :root {
     --clr-dark: 92, 41, 84;
     --clr-light: 254, 251, 254;
     --clr-dark-pink: 157, 0, 117;
     --clr-light-pink: 224, 148, 194;
-    --clr-light-brown: 131, 97, 110;
 
     --ff-work-sans: "Work Sans", sans-serif;
     --ff-roboto-mono: "Roboto Mono", monospace;
@@ -219,6 +219,11 @@ body {
 
 header {
     background-color: rgb(var(--clr-light));
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 /* Navigation */
@@ -236,14 +241,6 @@ header {
 .navigation > li:hover {
     color: rgb(var(--clr-light-pink));
     border-bottom: solid 4px rgb(var(--clr-light-pink));
-}
-
-.header {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1000;
 }
 /* Navigation end */
 
@@ -306,12 +303,12 @@ main {
     margin-right: 1rem;
 }
 
-.command-icon { 
+.command-icon-list > li { 
     position: relative;
     padding-left: 2rem;
 }
 
-.command-icon::before {
+.command-icon-list > li::before {
     display: inline-block;
     content: "\F2C6";
     font-family: 'bootstrap-icons';
@@ -345,7 +342,7 @@ main {
     padding: 0 1rem 1rem 1rem;
     width: 15rem;
     height: 22rem;
-    margin: 1rem;
+    margin: 1rem auto;
 }
 
 .card:hover {

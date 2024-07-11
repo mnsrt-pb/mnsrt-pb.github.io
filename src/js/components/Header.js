@@ -8,7 +8,7 @@ export default function Header(){
 
                 const targetId = e.target.getAttribute('href').substring(1);
                 const targetElement = document.getElementById(targetId);
-                const headerHeight = document.querySelector('.header').offsetHeight;
+                const headerHeight = document.querySelector('header').offsetHeight;
 
                 window.scrollTo({
                     top: targetElement.offsetTop - headerHeight,
@@ -23,7 +23,7 @@ export default function Header(){
     }, []);
 
     return (
-        <header className='header'>
+        <header>
             <nav>
                 <ul className='navigation flex'>
                     <li><a href='#home'>Home</a></li>

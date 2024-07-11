@@ -7,11 +7,16 @@ body {
     background-color: rgb(var(--clr-light));
 }
 
+/* Navigation */
 header {
     background-color: rgb(var(--clr-light));
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
 }
 
-/* Navigation */
 .navigation {
     justify-content: center;
 }
@@ -27,32 +32,9 @@ header {
     color: rgb(var(--clr-light-pink));
     border-bottom: solid 4px rgb(var(--clr-light-pink));
 }
-
-.header {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1000;
-}
 /* Navigation end */
 
-#home > p {
-    font-size: 1.125rem;
-}
-
-h2 {
-    margin-bottom: 1rem;
-}
-
-main {
-    padding-top: 6rem;
-    margin-inline: 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 10rem;
-}
-
+/* Grid Container */
 .grid-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -75,7 +57,7 @@ main {
     align-self: start;
 }
 
-.grid-container--home>* {
+.grid-container--home > * {
     max-width: 35ch;
 }
 
@@ -84,48 +66,9 @@ main {
     padding-bottom: 40vh;
     text-align: center;
 }
+/* Grid Container end */
 
-.grid-list {
-    grid-template-columns: auto 1fr;
-    grid-column-gap: 2rem;
-    grid-row-gap: 0;
-    margin-top: .5rem;
-}
-
-.grid-list > li{
-    margin-right: 1rem;
-}
-
-.command-icon { 
-    position: relative;
-    padding-left: 2rem;
-}
-
-.command-icon::before {
-    display: inline-block;
-    content: "\F2C6";
-    font-family: 'bootstrap-icons';
-    font-size: var(--fs-400);
-    font-weight: 600;
-    color: rgb(var(--clr-dark-pink));
-    position: absolute;
-    left: 0;
-}
-
-.svg-links > a, .experience-website > a {
-    color: rgb(var(--clr-dark-pink));
-    margin-right: 1rem;
-}
-
-.svg-links > a:hover, .experience-website > a:hover {
-    color: rgb(var(--clr-light-pink));
-}
-
-.experience-info {
-    display: flex;
-    justify-content: space-between;
-}
-
+/* Card */
 .card {
     display: flex;
     flex-direction: column;
@@ -135,12 +78,12 @@ main {
     padding: 0 1rem 1rem 1rem;
     width: 15rem;
     height: 22rem;
-    margin: 1rem;
+    margin: 1rem auto;
 }
 
 .card:hover {
     background-color: rgba(var(--clr-dark-pink), .15);
-    border: solid 3px rgba(var(--clr-dark-pink), .7);
+    border-color: rgba(var(--clr-dark-pink), .7);
 }
 
 .cards {
@@ -153,7 +96,6 @@ main {
         height: 26rem;
         margin: .5rem auto;
     }
-    
 }
 
 @media (min-width: 40rem) {
@@ -176,6 +118,28 @@ main {
     font-weight: 600;
     color: rgba(var(--clr-dark), .8)
 }
+/* Card end */
+
+.command-icon-list > li { 
+    position: relative;
+    padding-left: 2rem;
+}
+
+.command-icon-list > li::before {
+    display: inline-block;
+    content: "\F2C6";
+    font-family: 'bootstrap-icons';
+    font-size: var(--fs-400);
+    font-weight: 600;
+    color: rgb(var(--clr-dark-pink));
+    position: absolute;
+    left: 0;
+}
+
+.experience-info {
+    display: flex;
+    justify-content: space-between;
+}
 
 footer {
     margin-inline: auto;
@@ -184,7 +148,50 @@ footer {
     padding-bottom: 2rem;
 }
 
-hr { border: solid .5px rgb(var(--clr-light-pink)); }
+.grid-list {
+    grid-template-columns: auto 1fr;
+    grid-column-gap: 2rem;
+    grid-row-gap: 0;
+    margin-top: .5rem;
+}
+
+.grid-list > li {
+    margin-right: 1rem;
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+hr {
+    border: solid .5px rgb(var(--clr-light-pink));
+}
+
+#home > p {
+    font-size: 1.125rem;
+}
+
+main {
+    padding-top: 6rem;
+    margin-inline: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+}
+
+p + ul {
+    margin-top: 0;
+    margin-left: 1rem;
+}
+
+.svg-links > a, .experience-website > a {
+    color: rgb(var(--clr-dark-pink));
+    margin-right: 1rem;
+}
+
+.svg-links > a:hover, .experience-website > a:hover {
+    color: rgb(var(--clr-light-pink));
+}
 
 /* Overwriting slick's styles */
 .slick-prev:before,
