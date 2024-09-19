@@ -5,7 +5,7 @@ export default function Card({title, description, technologies, website, github,
         <section className='card'>
             <h3 className="fs-500 fw-500 text-pink">{title}</h3>
             <p className="fs-200">{description}</p>
-            <p>{technologies}</p>
+            <p className='ignore-default-align'>{technologies}</p>
             <div className='svg-links'>
                 {
                     website && 

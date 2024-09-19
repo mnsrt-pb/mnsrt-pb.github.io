@@ -7,6 +7,10 @@ body {
     background-color: rgb(var(--clr-light));
 }
 
+p:not(.ignore-default-align) , li {
+    text-align: justify;
+}
+
 /* Navigation */
 header {
     background-color: rgb(var(--clr-light));
@@ -79,6 +83,7 @@ header {
     width: 15rem;
     height: 22rem;
     margin: 1rem auto;
+    overflow-y: auto;
 }
 
 .card:hover {

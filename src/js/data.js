@@ -5,21 +5,28 @@ const projectsData = [
             TheaterTainment is a theater with a single, unspecified location, offering a comprehensive \
             online experience similar to that of Cinemark.',
 
-        technologies: 'Flask, SQLAlchemy, TMDB API, tmdbsimple, Bootstrap',
+        technologies: 'Flask, SQLAlchemy, TMDB API, tmdbsimple, pytest, Bootstrap',
         website: 'https://mnsrt-pb.github.io/theatertainment-showcase/',
         github: 'https://github.com/mnsrt-pb/TheaterTainment'
     },
     {
         title: 'Hello, Adventure',
-        description: 'A storytelling game designed to introduce young audiences to fundamental concepts \
-            in computer science. The game aims to ease students into these concepts through engaging examples \
-            and intuitive game mechanics, rather than teaching the full extent of algorithms.',
+        description: <span>A storytelling game designed to introduce young audiences to fundamental concepts
+        in computer science. The game eases students into these concepts through engaging examples and
+        intuitive game mechanics, rather than focusing on the full extent of algorithms. 
+        <br /><br /> 
+        As part of a full-stack application, the game collects data on student progression, 
+        which is transmitted and stored in a database for tracking and analysis. When loading the game, 
+        data from the database is used to allow students to continue from where they left off, providing
+        a seamless experience.
+        <br /><br />
+        </span>,
         technologies: 'GameMaker',
         github: 'https://github.com/nyu-team-b18/Game_GameMaker'
     },
     {
         title: 'Cherry Blossom',
-        description: 'An animation depicting the seasonal changes of a cherry blossom tree, beginning with spring.',
+        description: 'An animation depicting the seasonal changes of a cherry blossom tree.',
         technologies: 'P5.js',
         source: 'https://editor.p5js.org/mns13/sketches/eK1BPjwwn'
     },
