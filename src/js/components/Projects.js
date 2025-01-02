@@ -6,7 +6,7 @@ import projects from '../data'
 
 export default function Projects(){
     const settings = {
-        centerMode: true,
+        centerMode: false,
         slidesToShow: 4,
         slidesToScroll: 1,
 

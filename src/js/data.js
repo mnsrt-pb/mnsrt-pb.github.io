@@ -10,6 +10,14 @@ const projectsData = [
         github: 'https://github.com/mnsrt-pb/TheaterTainment'
     },
     {
+        title: 'Network',
+        description: 'Network is an interactive blogging web app that allows users to share any \
+        and all inspirational ideas. In addition, users can easily add their friends and any \
+        other authors to stay up to date on what others want to share.',
+        technologies: 'React, Express.js, MongoDB, Node.js, mongoose, passport-jwt, axios, multer, chai, mocha, DigitalOcean',
+        github: 'https://github.com/agiledev-students-fall2024/4-final-project-network'
+    },
+    {
         title: 'Hello, Adventure',
         description: <span>A storytelling game designed to introduce young audiences to fundamental concepts
         in computer science. The game eases students into these concepts through engaging examples and
