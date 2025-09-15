@@ -4,7 +4,7 @@ export default function Experience() {
     return (
         <section id='experience' className='grid-container'>
             <h2 className='fs-600 text-pink-outlined'>
-                monse/experience
+                mia/experience
             </h2>
             <div>
                 <h3 className='fs-500 fw-600 experience-info'>
@@ -24,9 +24,13 @@ export default function Experience() {
                 </p>
                 <ul className='command-icon-list'>
                     <li>Developed and maintain a custom website for Dani's Home Cleaning Services, ensuring functionality, user experience, accessibility, and responsiveness.</li>
-                    <li>Collaborated closely with the client to gather requirements, define the project vision, and deliver web solutions tailored to their business needs.</li>
+                    <li>Collaborated directly with client to gather requirements and translate business needs into technical solutions,
+                    ensuring <span className='fw-600'>100%</span> client satisfaction</li>
                     <li>Utilized technologies such as <span className='fw-600'>Django</span> and <span className='fw-600'>React</span> to optimize site performance, usability, and overall efficiency.</li>
-                    <li>Deployed and maintained the site using <span className='fw-600'>Heroku</span>, setting up a pipeline for development, staging, and production environments to streamline the deployment process and ensure seamless updates.</li>
+                    <li>Established <span className='fw-600'>CI/CD pipeline</span>  using <span className='fw-600'>Heroku</span> with development, staging, and production environments, reducing
+                    deployment time and minimizing downtime</li>
+                    <li>Integrated <span className='fw-600'>MailerSend API</span> for automated email notifications to clients and business for quote/booking form
+                    submissions</li>
                 </ul>
             </div>
         </section>

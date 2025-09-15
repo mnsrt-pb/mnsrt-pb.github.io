@@ -7,7 +7,7 @@ import projects from '../data'
 export default function Projects(){
     const settings = {
         centerMode: false,
-        slidesToShow: 4,
+        slidesToShow: 1,
         slidesToScroll: 1,
 
         responsive: [
@@ -15,14 +15,14 @@ export default function Projects(){
                 breakpoint: 1400,
                 settings: {
                     centerMode: false,
-                    slidesToShow: 3
+                    slidesToShow: 1
                 }
             },
             {
                 breakpoint: 992,
                 settings: {
                     centerMode: false,
-                    slidesToShow: 2
+                    slidesToShow: 1
                 }
             },
             {
@@ -41,7 +41,7 @@ export default function Projects(){
         <section id='projects'>
             <div className='grid-container'>
                 <h2 className='fs-600 text-pink-outlined text-center'>
-                    monse/projects
+                    mia/projects
                 </h2>
                 <p className='fs-400'>Here are some projects I have worked on both in and out of school.
                     I am particularly proud of <span className='fw-600'>TheaterTainment</span>.</p>

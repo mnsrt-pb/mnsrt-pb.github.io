@@ -4,12 +4,12 @@ export default function About() {
     return (
         <section id='about' className='grid-container'>
             <h2 className='fs-600 text-pink-outlined'>
-                monse/about-me
+                mia/about-me
             </h2>
             <div>
                 <p>
-                    I study at <span className='fw-600'>New York University</span> with 
-                    a major in Computer Science and a minor in Web Programming and Applications.
+                    I graduated from <span className='fw-600'>New York University</span> with 
+                    a B.S. in Computer Science and a minor in Web Programming and Applications.
                 </p>
                 <p>
                     I have experience with:
@@ -24,13 +24,21 @@ export default function About() {
                     <li>Express.js</li>
                     <li>Node.js</li>
                     <li>MongoDB</li>
+                    <li>SQLAlchemy</li>
+                    <li>Mongoose</li>
                     <li>Haskell</li>
                     <li>GameMaker</li>
                     <li>C++</li>
                     <li>Heroku</li>
                     <li>DigitalOcean</li>
+                    <li>Git</li>
+                    <li>GitHub Pages</li>
+                    <li>PWA</li>
+                    <li>Vite</li>
+                    <li>Bootstrap</li>
+                    <li>P5.js</li>
                 </ul>
-                <p>When I'm not coding I like to read or play mobile games.</p>
+                <p>When I'm not coding I like to read, crochet, solve jigsaw puzzles, or play mobile games.</p>
             </div>
         </section>
     )

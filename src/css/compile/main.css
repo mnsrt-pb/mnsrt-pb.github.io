@@ -80,10 +80,15 @@ header {
     border: solid 3px rgb(var(--clr-light-pink));
     border-radius: .5rem;
     padding: 0 1rem 1rem 1rem;
-    width: 15rem;
-    height: 22rem;
+    width: 100%;
     margin: 1rem auto;
     overflow-y: auto;
+    max-width: 60ch;
+}
+
+.card .svg-links {
+    margin-top: 1rem;
+    margin-left: auto;
 }
 
 .card:hover {
@@ -93,35 +98,60 @@ header {
 
 .cards {
     margin-inline: 1rem;
-    margin-top: 2rem;
+    width: 15rem;
+    place-self: center;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+p.tech {
+    margin-top: .25rem;
+    margin-bottom: 1rem;
+    font-size: var(--fs-200);
+    font-weight: 600;
+    color: rgba(var(--clr-dark), .8);
+    text-align: center;
+}
+
+.card ul > li {
+    font-size: var(--fs-200);
+    font-weight: 400;
+    color: rgba(var(--clr-dark), .8);
+}
+
+.card iframe {
+    align-self: center;
+}
+
+@media (min-width: 20rem) {
+    .cards {
+        width: 20rem;
+    }
 }
 
 @media (min-width: 35rem) {
-    .card {
-        height: 26rem;
+    .cards {
+        width: 30rem;
         margin: .5rem auto;
     }
 }
 
 @media (min-width: 40rem) {
-    .card {
-        width: 17rem;
-        height: 25rem;
+    .cards {
+        width: 35rem;
     }
 }
 
-@media (min-width: 45rem) {
+@media (min-width: 55rem) {
+    .card {
+        width: 100%;
+    }
     .cards {
+        width: 45rem;
         margin-inline: 3rem;
     }
-}
-
-.card > p:last-of-type {
-    margin-top: auto;
-    margin-bottom: 1rem;
-    font-size: var(--fs-200);
-    font-weight: 600;
-    color: rgba(var(--clr-dark), .8)
 }
 /* Card end */
 
@@ -139,6 +169,11 @@ header {
     color: rgb(var(--clr-dark-pink));
     position: absolute;
     left: 0;
+}
+
+.command-icon-list.small > li::before {
+    font-size: var(--fs-200);
+    left: 0.5rem;
 }
 
 .experience-info {
