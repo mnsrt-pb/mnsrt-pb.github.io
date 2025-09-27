@@ -7,8 +7,11 @@ body {
     background-color: rgb(var(--clr-light));
 }
 
-p:not(.ignore-default-align) , li {
-    text-align: justify;
+@media (min-width: 480px) {
+    p:not(.ignore-default-align) , li {
+        text-align: justify;
+        text-wrap: pretty;
+    }
 }
 
 /* Navigation */
@@ -73,6 +76,12 @@ header {
 /* Grid Container end */
 
 /* Card */
+.cards {
+    max-width: 60ch;          
+    width: min(100%, 60ch);   
+    margin: 0 auto;           
+}
+
 .card {
     display: flex;
     flex-direction: column;
@@ -80,10 +89,8 @@ header {
     border: solid 3px rgb(var(--clr-light-pink));
     border-radius: .5rem;
     padding: 0 1rem 1rem 1rem;
-    width: 100%;
-    margin: 1rem auto;
     overflow-y: auto;
-    max-width: 60ch;
+    margin: 1rem;
 }
 
 .card .svg-links {
@@ -94,12 +101,6 @@ header {
 .card:hover {
     background-color: rgba(var(--clr-dark-pink), .15);
     border-color: rgba(var(--clr-dark-pink), .7);
-}
-
-.cards {
-    margin-inline: 1rem;
-    width: 15rem;
-    place-self: center;
 }
 
 .card h3 {
@@ -123,35 +124,6 @@ p.tech {
 
 .card iframe {
     align-self: center;
-}
-
-@media (min-width: 20rem) {
-    .cards {
-        width: 20rem;
-    }
-}
-
-@media (min-width: 35rem) {
-    .cards {
-        width: 30rem;
-        margin: .5rem auto;
-    }
-}
-
-@media (min-width: 40rem) {
-    .cards {
-        width: 35rem;
-    }
-}
-
-@media (min-width: 55rem) {
-    .card {
-        width: 100%;
-    }
-    .cards {
-        width: 45rem;
-        margin-inline: 3rem;
-    }
 }
 /* Card end */
 
@@ -240,3 +212,9 @@ p + ul {
     color: rgb(var(--clr-dark-pink)) !important;
 }
 
+.cards .slick-prev,
+.cards .slick-next {
+  top: 10rem;        
+  transform: none;
+  z-index: 5;
+}
